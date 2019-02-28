@@ -1,0 +1,42 @@
+﻿{
+  "name": "ethnograph.io",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "",
+  "background": {
+    "scripts": [
+      "jquery-3.3.1.min.js",
+      "bg.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "jquery-3.3.1.min.js",
+        "content.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": [
+        "*://*.google.com/maps/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "jquery-3.3.1.min.js",
+    "toolbar.html",
+    "toolbar.js",
+    "mark.html",
+    "content.css"
+  ]
+}

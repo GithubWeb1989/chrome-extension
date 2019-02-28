@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #F47D4C;
+            white-space: nowrap;
+            min-width: 800px;
+            text-align: center;
+            font-family: 'Lato', serif;
+        }
+
+        #msg, button {
+            font-size: 28px;
+            margin-top: 5px;
+
+
+        }
+        button {
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        button:first-of-type {
+            background-color: green;
+        }
+        button:nth-of-type(2) {
+            background-color: #e2dfdf;
+        }
+
+        button:nth-child(2) {
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+
+        button:hover {
+            outline: #F47D4C 2px solid;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="toolbar.js" type="text/javascript"></script>
+</head>
+<body>
+<span id="msg"></span>
+<button value="1">YES</button>
+<button value="0">NO</button>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿body.market-research-tool-margin {
+    margin-top: 46px;
+    position: absolute;
+    width: 100%;
+}
+
+iframe.market-research-tool {
+    overflow: hidden;
+    border: 0;
+}
+
+iframe#market-research-tool {
+    z-index: 2147483640;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: none;
+    -webkit-box-sizing: content-box;
+    color: black;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    height: 46px;
+}
+
+iframe#market-research-tool.bottom {
+    top: auto;
+    bottom: 0;
+}
+
+.reset {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: solid 1px #DFDFDF;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
